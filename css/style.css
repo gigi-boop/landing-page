@@ -5,7 +5,29 @@ body {
 }
 
 a {
+    padding-bottom: 8px;
     text-decoration: none;
+    position: relative;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px hsl(65, 88%, 52%) solid;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+a:focus {
+    outline: none;
+}
+
+a:hover::after,
+a:focus::after {
+    transform: scaleX(1);
 }
 
 button {
@@ -29,7 +51,6 @@ button:focus {
     color: var(--btn-text-hover);
 }
 
-a:focus,
 button:focus {
     outline: 3px hsl(65, 88%, 52%) solid;
     outline-offset: 5px;
@@ -111,8 +132,8 @@ a,
 
 .info-container {
     padding-top: 2.5em;
-    padding-bottom: 1.5em;
     padding-inline: 2em;
+    padding-bottom: 1.5em;
     min-height: 70vh;
     text-align: center;
 }
