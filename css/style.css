@@ -43,8 +43,7 @@ button:focus {
 
 .nav-bar {
     padding-top: 1em;
-    padding-left: 15%;
-    padding-right: 10%;
+    padding-inline: 15%;
     min-height: 5%;
     display: flex;
     justify-content: space-between;
@@ -58,8 +57,7 @@ button:focus {
 
 .hero {
     padding-top: 6.5em;
-    padding-left: 15%;
-    padding-right: 10%;
+    padding-inline: 15%;
     padding-bottom: 2em;
     min-height: 70%;
     display: flex;
