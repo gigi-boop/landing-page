@@ -173,11 +173,46 @@ h2 {
     align-self: flex-end;
 }
 
+.cta-container {
+    padding-block: 3.5em;
+    padding-inline: 10em;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cta {
+    padding: 3em;
     background-color: #3882f6;
+    color: #f9faf8;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    border-radius: 10px;
+}
+
+.cta-text {
+    min-width: 80%;
+    flex-basis: auto;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.cta p {
+    font-size: 18px;
 }
 
 .cta-signup {
     outline: 2px var(--btn-text-clr) solid;
-    outline-offset: -2px;
+}
+
+footer {
+    background-color: #1f2937;
 }
