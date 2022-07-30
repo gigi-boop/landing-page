@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap");
 
 body {
     font-family: "Roboto", sans-serif;
@@ -145,8 +145,31 @@ h2 {
 }
 
 .testimonial-container {
-    min-height: 50vh;
+    padding-block: 5em;
+    min-height: 70vh;
     background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial {
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.testimonial-quote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.testimonial-attr {
+    font-size: 24px;
+    font-weight: 700;
+    align-self: flex-end;
 }
 
 .cta {
