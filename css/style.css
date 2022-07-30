@@ -155,6 +155,7 @@ h2 {
 
 .testimonial {
     max-width: 65%;
+    color: #1f2937;
     display: flex;
     flex-direction: column;
     gap: 1em;
